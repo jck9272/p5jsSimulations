@@ -50,7 +50,7 @@ class Stone extends Particle {
   inWater() {
     if (this.in) {
       let drag = pow(this.vel.magnitude(), 2);
-      let dragVec = this.vel.copy().normalizeTo(-0.06 * drag);
+      let dragVec = this.vel.copy().normalizeTo(-0.07 * drag);
       this.applyForce(dragVec.scale(this.mass));
     }
   }
